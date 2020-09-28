@@ -1,0 +1,39 @@
+C:\Users\Ammar\source\repos\VBNet\Sistem Sewa Kenderaan v2\Sistem Sewa Kenderaan\Sistem Sewa Kenderaan\bin\Debug\Sistem Sewa Kenderaan.exe.config
+C:\Users\Ammar\source\repos\VBNet\Sistem Sewa Kenderaan v2\Sistem Sewa Kenderaan\Sistem Sewa Kenderaan\bin\Debug\Sistem Sewa Kenderaan.exe
+C:\Users\Ammar\source\repos\VBNet\Sistem Sewa Kenderaan v2\Sistem Sewa Kenderaan\Sistem Sewa Kenderaan\bin\Debug\Sistem Sewa Kenderaan.pdb
+C:\Users\Ammar\source\repos\VBNet\Sistem Sewa Kenderaan v2\Sistem Sewa Kenderaan\Sistem Sewa Kenderaan\bin\Debug\Sistem Sewa Kenderaan.xml
+C:\Users\Ammar\source\repos\VBNet\Sistem Sewa Kenderaan v2\Sistem Sewa Kenderaan\Sistem Sewa Kenderaan\obj\Debug\Sistem Sewa Kenderaan.vbprojAssemblyReference.cache
+C:\Users\Ammar\source\repos\VBNet\Sistem Sewa Kenderaan v2\Sistem Sewa Kenderaan\Sistem Sewa Kenderaan\obj\Debug\Sistem_Sewa_Kenderaan.LoginForm.resources
+C:\Users\Ammar\source\repos\VBNet\Sistem Sewa Kenderaan v2\Sistem Sewa Kenderaan\Sistem Sewa Kenderaan\obj\Debug\Sistem_Sewa_Kenderaan.Resources.resources
+C:\Users\Ammar\source\repos\VBNet\Sistem Sewa Kenderaan v2\Sistem Sewa Kenderaan\Sistem Sewa Kenderaan\obj\Debug\Sistem Sewa Kenderaan.vbproj.GenerateResource.cache
+C:\Users\Ammar\source\repos\VBNet\Sistem Sewa Kenderaan v2\Sistem Sewa Kenderaan\Sistem Sewa Kenderaan\obj\Debug\Sistem Sewa Kenderaan.vbproj.CoreCompileInputs.cache
+C:\Users\Ammar\source\repos\VBNet\Sistem Sewa Kenderaan v2\Sistem Sewa Kenderaan\Sistem Sewa Kenderaan\obj\Debug\Sistem Sewa Kenderaan.exe
+C:\Users\Ammar\source\repos\VBNet\Sistem Sewa Kenderaan v2\Sistem Sewa Kenderaan\Sistem Sewa Kenderaan\obj\Debug\Sistem Sewa Kenderaan.xml
+C:\Users\Ammar\source\repos\VBNet\Sistem Sewa Kenderaan v2\Sistem Sewa Kenderaan\Sistem Sewa Kenderaan\obj\Debug\Sistem Sewa Kenderaan.pdb
+C:\Users\Ammar\source\repos\VBNet\Sistem Sewa Kenderaan v2\Sistem Sewa Kenderaan\Sistem Sewa Kenderaan\obj\Debug\Sistem_Sewa_Kenderaan.RegisterForm.resources
+C:\Users\Ammar\source\repos\VBNet\Sistem Sewa Kenderaan v2\Sistem Sewa Kenderaan\Sistem Sewa Kenderaan\obj\Debug\Sistem_Sewa_Kenderaan.RegisterConfirmationForm.resources
+C:\Users\Ammar\source\repos\VBNet\Sistem Sewa Kenderaan v2\Sistem Sewa Kenderaan\Sistem Sewa Kenderaan\obj\Debug\Sistem_Sewa_Kenderaan.RegistrationCode.resources
+C:\Users\Ammar\source\repos\VBNet\Sistem Sewa Kenderaan v2\Sistem Sewa Kenderaan\Sistem Sewa Kenderaan\bin\Debug\MySql.Data.dll
+C:\Users\Ammar\source\repos\VBNet\Sistem Sewa Kenderaan v2\Sistem Sewa Kenderaan\Sistem Sewa Kenderaan\bin\Debug\Google.Protobuf.dll
+C:\Users\Ammar\source\repos\VBNet\Sistem Sewa Kenderaan v2\Sistem Sewa Kenderaan\Sistem Sewa Kenderaan\bin\Debug\Zstandard.Net.dll
+C:\Users\Ammar\source\repos\VBNet\Sistem Sewa Kenderaan v2\Sistem Sewa Kenderaan\Sistem Sewa Kenderaan\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\Ammar\source\repos\VBNet\Sistem Sewa Kenderaan v2\Sistem Sewa Kenderaan\Sistem Sewa Kenderaan\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\Ammar\source\repos\VBNet\Sistem Sewa Kenderaan v2\Sistem Sewa Kenderaan\Sistem Sewa Kenderaan\bin\Debug\Ubiety.Dns.Core.dll
+C:\Users\Ammar\source\repos\VBNet\Sistem Sewa Kenderaan v2\Sistem Sewa Kenderaan\Sistem Sewa Kenderaan\bin\Debug\Renci.SshNet.dll
+C:\Users\Ammar\source\repos\VBNet\Sistem Sewa Kenderaan v2\Sistem Sewa Kenderaan\Sistem Sewa Kenderaan\bin\Debug\System.Buffers.dll
+C:\Users\Ammar\source\repos\VBNet\Sistem Sewa Kenderaan v2\Sistem Sewa Kenderaan\Sistem Sewa Kenderaan\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\Ammar\source\repos\VBNet\Sistem Sewa Kenderaan v2\Sistem Sewa Kenderaan\Sistem Sewa Kenderaan\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\Ammar\source\repos\VBNet\Sistem Sewa Kenderaan v2\Sistem Sewa Kenderaan\Sistem Sewa Kenderaan\bin\Debug\System.Memory.dll
+C:\Users\Ammar\source\repos\VBNet\Sistem Sewa Kenderaan v2\Sistem Sewa Kenderaan\Sistem Sewa Kenderaan\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Ammar\source\repos\VBNet\Sistem Sewa Kenderaan v2\Sistem Sewa Kenderaan\Sistem Sewa Kenderaan\bin\Debug\MySql.Data.xml
+C:\Users\Ammar\source\repos\VBNet\Sistem Sewa Kenderaan v2\Sistem Sewa Kenderaan\Sistem Sewa Kenderaan\obj\Debug\Sistem Sewa Kenderaan.exe.config
+C:\Users\Ammar\source\repos\VBNet\Sistem Sewa Kenderaan v2\Sistem Sewa Kenderaan\Sistem Sewa Kenderaan\obj\Debug\Sistem Sewa Kenderaan.vbproj.CopyComplete
+C:\Users\Ammar\source\repos\VBNet\Sistem Sewa Kenderaan v2\Sistem Sewa Kenderaan\Sistem Sewa Kenderaan\obj\Debug\Sistem_Sewa_Kenderaan.AdminForm.resources
+C:\Users\Ammar\source\repos\VBNet\Sistem Sewa Kenderaan v2\Sistem Sewa Kenderaan\Sistem Sewa Kenderaan\obj\Debug\Sistem_Sewa_Kenderaan.RegistrationCodeComponent.resources
+C:\Users\Ammar\source\repos\VBNet\Sistem Sewa Kenderaan v2\Sistem Sewa Kenderaan\Sistem Sewa Kenderaan\obj\Debug\Sistem_Sewa_Kenderaan.PemberiSewaForm.resources
+C:\Users\Ammar\source\repos\VBNet\Sistem Sewa Kenderaan v2\Sistem Sewa Kenderaan\Sistem Sewa Kenderaan\obj\Debug\Sistem_Sewa_Kenderaan.RentalCarComponentForPemberiSewa.resources
+C:\Users\Ammar\source\repos\VBNet\Sistem Sewa Kenderaan v2\Sistem Sewa Kenderaan\Sistem Sewa Kenderaan\obj\Debug\Sistem_Sewa_Kenderaan.RentalCarComponentForPenyewa.resources
+C:\Users\Ammar\source\repos\VBNet\Sistem Sewa Kenderaan v2\Sistem Sewa Kenderaan\Sistem Sewa Kenderaan\obj\Debug\Sistem_Sewa_Kenderaan.AddRentalCar.resources
+C:\Users\Ammar\source\repos\VBNet\Sistem Sewa Kenderaan v2\Sistem Sewa Kenderaan\Sistem Sewa Kenderaan\obj\Debug\Sistem_Sewa_Kenderaan.PenyewaForm.resources
+C:\Users\Ammar\source\repos\VBNet\Sistem Sewa Kenderaan v2\Sistem Sewa Kenderaan\Sistem Sewa Kenderaan\obj\Debug\Sistem_Sewa_Kenderaan.CarRentForm.resources
+C:\Users\Ammar\source\repos\VBNet\Sistem Sewa Kenderaan v2\Sistem Sewa Kenderaan\Sistem Sewa Kenderaan\obj\Debug\Sistem_Sewa_Kenderaan.RentalCarComponentForPemberiSewa2.resources

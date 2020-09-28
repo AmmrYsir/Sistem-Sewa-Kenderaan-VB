@@ -1,0 +1,233 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2D72F207-51D6-463C-B470-97D6F37CA51C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Sistem_Sewa_Kenderaan.My.MyApplication</StartupObject>
+    <RootNamespace>Sistem_Sewa_Kenderaan</RootNamespace>
+    <AssemblyName>Sistem Sewa Kenderaan</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Sistem Sewa Kenderaan.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Sistem Sewa Kenderaan.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=8.0.20.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddRentalCar.Designer.vb">
+      <DependentUpon>AddRentalCar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AddRentalCar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminForm.Designer.vb">
+      <DependentUpon>AdminForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AdminForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CarRentForm.Designer.vb">
+      <DependentUpon>CarRentForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CarRentForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Database.vb" />
+    <Compile Include="LoginForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.vb">
+      <DependentUpon>LoginForm.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="PemberiSewaForm.Designer.vb">
+      <DependentUpon>PemberiSewaForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PemberiSewaForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PenyewaForm.Designer.vb">
+      <DependentUpon>PenyewaForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PenyewaForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegisterConfirmationForm.Designer.vb">
+      <DependentUpon>RegisterConfirmationForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RegisterConfirmationForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegisterForm.Designer.vb">
+      <DependentUpon>RegisterForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RegisterForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistrationCode.Designer.vb">
+      <DependentUpon>RegistrationCode.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RegistrationCode.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistrationCodeComponent.Designer.vb">
+      <DependentUpon>RegistrationCodeComponent.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RegistrationCodeComponent.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RentalCarComponentForPemberiSewa.Designer.vb">
+      <DependentUpon>RentalCarComponentForPemberiSewa.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RentalCarComponentForPemberiSewa.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RentalCarComponentForPemberiSewa2.Designer.vb">
+      <DependentUpon>RentalCarComponentForPemberiSewa2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RentalCarComponentForPemberiSewa2.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RentalCarComponentForPenyewa.Designer.vb">
+      <DependentUpon>RentalCarComponentForPenyewa.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RentalCarComponentForPenyewa.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AddRentalCar.resx">
+      <DependentUpon>AddRentalCar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminForm.resx">
+      <DependentUpon>AdminForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CarRentForm.resx">
+      <DependentUpon>CarRentForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PemberiSewaForm.resx">
+      <DependentUpon>PemberiSewaForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PenyewaForm.resx">
+      <DependentUpon>PenyewaForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegisterConfirmationForm.resx">
+      <DependentUpon>RegisterConfirmationForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegisterForm.resx">
+      <DependentUpon>RegisterForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistrationCode.resx">
+      <DependentUpon>RegistrationCode.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistrationCodeComponent.resx">
+      <DependentUpon>RegistrationCodeComponent.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RentalCarComponentForPemberiSewa.resx">
+      <DependentUpon>RentalCarComponentForPemberiSewa.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RentalCarComponentForPemberiSewa2.resx">
+      <DependentUpon>RentalCarComponentForPemberiSewa2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RentalCarComponentForPenyewa.resx">
+      <DependentUpon>RentalCarComponentForPenyewa.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
