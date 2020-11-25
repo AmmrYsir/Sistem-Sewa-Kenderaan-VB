@@ -43,6 +43,7 @@ Partial Class LoginForm
         Me.TxtPassword.ForeColor = System.Drawing.SystemColors.Control
         Me.TxtPassword.Location = New System.Drawing.Point(12, 12)
         Me.TxtPassword.Name = "TxtPassword"
+        Me.TxtPassword.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.TxtPassword.Size = New System.Drawing.Size(282, 30)
         Me.TxtPassword.TabIndex = 1
         '
@@ -151,7 +152,7 @@ Partial Class LoginForm
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.MaximizeBox = False
         Me.Name = "LoginForm"
-        Me.Text = "CARRENT | Login "
+        Me.text = "CARRent | Login Form"
         Me.PanelTextBox2.ResumeLayout(False)
         Me.PanelTextBox2.PerformLayout()
         Me.PanelTextBox1.ResumeLayout(False)

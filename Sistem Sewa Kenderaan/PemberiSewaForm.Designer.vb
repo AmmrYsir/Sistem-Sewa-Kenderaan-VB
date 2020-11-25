@@ -99,7 +99,7 @@ Partial Class PemberiSewaForm
         Me.BtnHistory.Name = "BtnHistory"
         Me.BtnHistory.Size = New System.Drawing.Size(244, 76)
         Me.BtnHistory.TabIndex = 6
-        Me.BtnHistory.Text = "HISTORY"
+        Me.BtnHistory.Text = "NOTIFICATION"
         Me.BtnHistory.UseVisualStyleBackColor = False
         '
         'Label3
@@ -129,9 +129,9 @@ Partial Class PemberiSewaForm
         Me.LblHistory.ForeColor = System.Drawing.SystemColors.Control
         Me.LblHistory.Location = New System.Drawing.Point(266, 18)
         Me.LblHistory.Name = "LblHistory"
-        Me.LblHistory.Size = New System.Drawing.Size(185, 52)
+        Me.LblHistory.Size = New System.Drawing.Size(299, 52)
         Me.LblHistory.TabIndex = 8
-        Me.LblHistory.Text = "HISTORY"
+        Me.LblHistory.Text = "NOTIFICATION"
         Me.LblHistory.Visible = False
         '
         'LblNotification
@@ -141,7 +141,7 @@ Partial Class PemberiSewaForm
         Me.LblNotification.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.LblNotification.Font = New System.Drawing.Font("Microsoft YaHei UI", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LblNotification.ForeColor = System.Drawing.SystemColors.Control
-        Me.LblNotification.Location = New System.Drawing.Point(156, 191)
+        Me.LblNotification.Location = New System.Drawing.Point(177, 191)
         Me.LblNotification.Name = "LblNotification"
         Me.LblNotification.Size = New System.Drawing.Size(18, 19)
         Me.LblNotification.TabIndex = 9

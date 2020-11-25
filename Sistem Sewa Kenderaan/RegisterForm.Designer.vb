@@ -33,7 +33,7 @@ Partial Class RegisterForm
         Me.TxtPassword = New System.Windows.Forms.TextBox()
         Me.LblPassword = New System.Windows.Forms.Label()
         Me.PanelTxtBox1 = New System.Windows.Forms.Panel()
-        Me.TxtICNumber = New System.Windows.Forms.TextBox()
+        Me.TxtICNumber = New System.Windows.Forms.MaskedTextBox()
         Me.Lbl_ICNumber = New System.Windows.Forms.Label()
         Me.GrpBoxPersonalDetails = New System.Windows.Forms.GroupBox()
         Me.GrpBoxMaklumatPelajar = New System.Windows.Forms.GroupBox()
@@ -204,13 +204,13 @@ Partial Class RegisterForm
         '
         Me.TxtICNumber.BackColor = System.Drawing.Color.FromArgb(CType(CType(44, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(80, Byte), Integer))
         Me.TxtICNumber.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TxtICNumber.Font = New System.Drawing.Font("Microsoft YaHei UI", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TxtICNumber.ForeColor = System.Drawing.SystemColors.Control
-        Me.TxtICNumber.Location = New System.Drawing.Point(12, 12)
-        Me.TxtICNumber.MaxLength = 12
+        Me.TxtICNumber.Location = New System.Drawing.Point(3, 12)
+        Me.TxtICNumber.Mask = "000000000000"
         Me.TxtICNumber.Name = "TxtICNumber"
-        Me.TxtICNumber.Size = New System.Drawing.Size(179, 30)
-        Me.TxtICNumber.TabIndex = 0
+        Me.TxtICNumber.Size = New System.Drawing.Size(200, 31)
+        Me.TxtICNumber.TabIndex = 1
+        Me.TxtICNumber.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Lbl_ICNumber
         '
@@ -582,7 +582,6 @@ Partial Class RegisterForm
 
     Friend WithEvents GrpBoxAccountRegistration As GroupBox
     Friend WithEvents PanelTxtBox1 As Panel
-    Friend WithEvents TxtICNumber As TextBox
     Friend WithEvents Lbl_ICNumber As Label
     Friend WithEvents PanelTxtBox3 As Panel
     Friend WithEvents TxtPassword As TextBox
@@ -613,11 +612,12 @@ Partial Class RegisterForm
     Friend WithEvents GrpBoxMaklumatPelajar As GroupBox
     Friend WithEvents LblKadMatrik As Label
     Friend WithEvents PanelTxtBox5 As Panel
-    Friend WithEvents TxtKadMatrik As TextBox
     Friend WithEvents LblJurusan As Label
     Friend WithEvents PanelTxtBox6 As Panel
     Friend WithEvents TxtJurusan As TextBox
     Friend WithEvents LblDaftarSebagai As Label
     Friend WithEvents RBtnPemberiSewa As RadioButton
     Friend WithEvents RBtnPenyewa As RadioButton
+    Friend WithEvents TxtICNumber As MaskedTextBox
+    Friend WithEvents TxtKadMatrik As TextBox
 End Class

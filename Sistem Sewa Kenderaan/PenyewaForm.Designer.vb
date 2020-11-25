@@ -24,14 +24,18 @@ Partial Class PenyewaForm
     Private Sub InitializeComponent()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.SearchCarButton = New System.Windows.Forms.Button()
         Me.FlowLayoutPanelCarRent = New System.Windows.Forms.FlowLayoutPanel()
-        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.PanelSearchBar = New System.Windows.Forms.Panel()
         Me.TxtSearchBar = New System.Windows.Forms.TextBox()
         Me.CmBoxStatus = New System.Windows.Forms.ComboBox()
         Me.CmBoxTransmission = New System.Windows.Forms.ComboBox()
         Me.BtnSearch = New System.Windows.Forms.Button()
-        Me.Panel1.SuspendLayout()
+        Me.RentHistoryButton = New System.Windows.Forms.Button()
+        Me.FlowLayoutPanelRentalHistory = New System.Windows.Forms.FlowLayoutPanel()
+        Me.LblRentalHistory = New System.Windows.Forms.Label()
+        Me.LblNotification = New System.Windows.Forms.Label()
+        Me.PanelSearchBar.SuspendLayout()
         Me.SuspendLayout()
         '
         'Label2
@@ -54,35 +58,38 @@ Partial Class PenyewaForm
         Me.Label3.TabIndex = 10
         Me.Label3.Text = "CARRENT"
         '
-        'Button2
+        'SearchCarButton
         '
-        Me.Button2.BackColor = System.Drawing.Color.FromArgb(CType(CType(52, Byte), Integer), CType(CType(73, Byte), Integer), CType(CType(94, Byte), Integer))
-        Me.Button2.FlatAppearance.BorderSize = 0
-        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button2.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.0!)
-        Me.Button2.ForeColor = System.Drawing.SystemColors.Control
-        Me.Button2.Location = New System.Drawing.Point(-2, 70)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(244, 76)
-        Me.Button2.TabIndex = 8
-        Me.Button2.Text = "SEARCH CAR"
-        Me.Button2.UseVisualStyleBackColor = False
+        Me.SearchCarButton.BackColor = System.Drawing.Color.FromArgb(CType(CType(52, Byte), Integer), CType(CType(73, Byte), Integer), CType(CType(94, Byte), Integer))
+        Me.SearchCarButton.FlatAppearance.BorderSize = 0
+        Me.SearchCarButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.SearchCarButton.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.0!)
+        Me.SearchCarButton.ForeColor = System.Drawing.SystemColors.Control
+        Me.SearchCarButton.Location = New System.Drawing.Point(-2, 70)
+        Me.SearchCarButton.Name = "SearchCarButton"
+        Me.SearchCarButton.Size = New System.Drawing.Size(244, 76)
+        Me.SearchCarButton.TabIndex = 8
+        Me.SearchCarButton.Text = "SEARCH CAR"
+        Me.SearchCarButton.UseVisualStyleBackColor = False
         '
         'FlowLayoutPanelCarRent
         '
+        Me.FlowLayoutPanelCarRent.AutoScroll = True
+        Me.FlowLayoutPanelCarRent.FlowDirection = System.Windows.Forms.FlowDirection.TopDown
         Me.FlowLayoutPanelCarRent.Location = New System.Drawing.Point(268, 70)
         Me.FlowLayoutPanelCarRent.Name = "FlowLayoutPanelCarRent"
         Me.FlowLayoutPanelCarRent.Size = New System.Drawing.Size(950, 647)
         Me.FlowLayoutPanelCarRent.TabIndex = 11
+        Me.FlowLayoutPanelCarRent.WrapContents = False
         '
-        'Panel1
+        'PanelSearchBar
         '
-        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(44, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(80, Byte), Integer))
-        Me.Panel1.Controls.Add(Me.TxtSearchBar)
-        Me.Panel1.Location = New System.Drawing.Point(627, 12)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(485, 37)
-        Me.Panel1.TabIndex = 12
+        Me.PanelSearchBar.BackColor = System.Drawing.Color.FromArgb(CType(CType(44, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(80, Byte), Integer))
+        Me.PanelSearchBar.Controls.Add(Me.TxtSearchBar)
+        Me.PanelSearchBar.Location = New System.Drawing.Point(627, 12)
+        Me.PanelSearchBar.Name = "PanelSearchBar"
+        Me.PanelSearchBar.Size = New System.Drawing.Size(485, 37)
+        Me.PanelSearchBar.TabIndex = 12
         '
         'TxtSearchBar
         '
@@ -137,25 +144,80 @@ Partial Class PenyewaForm
         Me.BtnSearch.Text = "Search"
         Me.BtnSearch.UseVisualStyleBackColor = False
         '
+        'RentHistoryButton
+        '
+        Me.RentHistoryButton.BackColor = System.Drawing.Color.FromArgb(CType(CType(52, Byte), Integer), CType(CType(73, Byte), Integer), CType(CType(94, Byte), Integer))
+        Me.RentHistoryButton.FlatAppearance.BorderSize = 0
+        Me.RentHistoryButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.RentHistoryButton.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.0!)
+        Me.RentHistoryButton.ForeColor = System.Drawing.SystemColors.Control
+        Me.RentHistoryButton.Location = New System.Drawing.Point(-2, 146)
+        Me.RentHistoryButton.Name = "RentHistoryButton"
+        Me.RentHistoryButton.Size = New System.Drawing.Size(244, 76)
+        Me.RentHistoryButton.TabIndex = 16
+        Me.RentHistoryButton.Text = "RENTAL HISTORY"
+        Me.RentHistoryButton.UseVisualStyleBackColor = False
+        '
+        'FlowLayoutPanelRentalHistory
+        '
+        Me.FlowLayoutPanelRentalHistory.AutoScroll = True
+        Me.FlowLayoutPanelRentalHistory.FlowDirection = System.Windows.Forms.FlowDirection.TopDown
+        Me.FlowLayoutPanelRentalHistory.Location = New System.Drawing.Point(268, 70)
+        Me.FlowLayoutPanelRentalHistory.Name = "FlowLayoutPanelRentalHistory"
+        Me.FlowLayoutPanelRentalHistory.Size = New System.Drawing.Size(950, 647)
+        Me.FlowLayoutPanelRentalHistory.TabIndex = 12
+        Me.FlowLayoutPanelRentalHistory.Visible = False
+        Me.FlowLayoutPanelRentalHistory.WrapContents = False
+        '
+        'LblRentalHistory
+        '
+        Me.LblRentalHistory.AutoSize = True
+        Me.LblRentalHistory.Font = New System.Drawing.Font("Microsoft YaHei UI", 24.0!)
+        Me.LblRentalHistory.ForeColor = System.Drawing.SystemColors.Control
+        Me.LblRentalHistory.Location = New System.Drawing.Point(264, 8)
+        Me.LblRentalHistory.Name = "LblRentalHistory"
+        Me.LblRentalHistory.Size = New System.Drawing.Size(360, 52)
+        Me.LblRentalHistory.TabIndex = 17
+        Me.LblRentalHistory.Text = "RENTAL HISTORY"
+        Me.LblRentalHistory.Visible = False
+        '
+        'LblNotification
+        '
+        Me.LblNotification.AutoSize = True
+        Me.LblNotification.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(57, Byte), Integer), CType(CType(43, Byte), Integer))
+        Me.LblNotification.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.LblNotification.Font = New System.Drawing.Font("Microsoft YaHei UI", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblNotification.ForeColor = System.Drawing.SystemColors.Control
+        Me.LblNotification.Location = New System.Drawing.Point(186, 186)
+        Me.LblNotification.Name = "LblNotification"
+        Me.LblNotification.Size = New System.Drawing.Size(18, 19)
+        Me.LblNotification.TabIndex = 14
+        Me.LblNotification.Text = "0"
+        Me.LblNotification.Visible = False
+        '
         'PenyewaForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(230, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(34, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1237, 738)
+        Me.Controls.Add(Me.FlowLayoutPanelRentalHistory)
+        Me.Controls.Add(Me.LblNotification)
+        Me.Controls.Add(Me.LblRentalHistory)
+        Me.Controls.Add(Me.RentHistoryButton)
         Me.Controls.Add(Me.CmBoxTransmission)
         Me.Controls.Add(Me.BtnSearch)
         Me.Controls.Add(Me.CmBoxStatus)
-        Me.Controls.Add(Me.Panel1)
+        Me.Controls.Add(Me.PanelSearchBar)
         Me.Controls.Add(Me.FlowLayoutPanelCarRent)
         Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.Button2)
+        Me.Controls.Add(Me.SearchCarButton)
         Me.Controls.Add(Me.Label2)
         Me.MaximizeBox = False
         Me.Name = "PenyewaForm"
         Me.Text = "Penyewa | Search Now"
-        Me.Panel1.ResumeLayout(False)
-        Me.Panel1.PerformLayout()
+        Me.PanelSearchBar.ResumeLayout(False)
+        Me.PanelSearchBar.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -163,11 +225,15 @@ Partial Class PenyewaForm
 
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
-    Friend WithEvents Button2 As Button
+    Friend WithEvents SearchCarButton As Button
     Friend WithEvents FlowLayoutPanelCarRent As FlowLayoutPanel
-    Friend WithEvents Panel1 As Panel
+    Friend WithEvents PanelSearchBar As Panel
     Friend WithEvents TxtSearchBar As TextBox
     Friend WithEvents CmBoxStatus As ComboBox
     Friend WithEvents CmBoxTransmission As ComboBox
     Friend WithEvents BtnSearch As Button
+    Friend WithEvents RentHistoryButton As Button
+    Friend WithEvents FlowLayoutPanelRentalHistory As FlowLayoutPanel
+    Friend WithEvents LblRentalHistory As Label
+    Friend WithEvents LblNotification As Label
 End Class

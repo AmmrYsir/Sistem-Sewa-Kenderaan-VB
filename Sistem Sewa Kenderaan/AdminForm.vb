@@ -27,7 +27,7 @@ Public Class AdminForm
             newComponent.Name = Rows("key_id")
             newComponent.BackColor = ColorTranslator.FromHtml("#e74c3c")
             newComponent.TxtRegistrationCode.Text = Rows("key_code")
-            newComponent.LblOwnerName.Text = Rows("key_user")
+            newComponent.LblOwnerName.Text = Rows("key_user").ToString()
             AddHandler newComponent.TxtRegistrationCode.Click, AddressOf newComponent_Click
             AddHandler newComponent.BtnDiscard.Click, AddressOf newComponentButton_Click
             FlowLayoutPanelRegistrationKey.Controls.Add(newComponent)
@@ -66,7 +66,12 @@ Public Class AdminForm
         Dim Rows As DataRow = dt.Rows(0)
 
         TxtKeyId.Text = Rows("key_id")
-        TxtKeyUser.Text = Rows("key_user")
+        If IsDBNull(Rows("key_user")) Then
+            TxtKeyUser.Text = ""
+        Else
+            TxtKeyUser.Text = Rows("key_user")
+        End If
+
         TxtKeyCode.Text = Rows("key_code")
         TxtKeyCreatedDate.Text = Rows("key_created_date")
         TxtKeyStatus.Text = Rows("key_status")

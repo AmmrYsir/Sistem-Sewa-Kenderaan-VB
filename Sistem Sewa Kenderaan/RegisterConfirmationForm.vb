@@ -23,16 +23,19 @@ Public Class RegisterConfirmationForm
                     If RegisterForm.RBtnStudent.Checked Then
                         cmd = New MySqlCommand("INSERT INTO pelajar_table(ic_number, kad_matrik, jurusan) VALUES(@ic_number, @kad_matrik, @jurusan)", conn)
                         cmd.Parameters.AddWithValue("@ic_number", RegisterForm.TxtICNumber.Text)
-                        cmd.Parameters.AddWithValue("@kad_matrik", RegisterForm.TxtKadMatrik.Text)
+                        cmd.Parameters.AddWithValue("@kad_matrik", RegisterForm.TxtICNumber.Text)
                         cmd.Parameters.AddWithValue("@jurusan", RegisterForm.TxtJurusan.Text)
                         cmd.ExecuteNonQuery()
                     End If
+
                     With LoginForm
                         .Show()
                         .Location = Me.Location
-                        RegisterForm.Close()
                         Me.Close()
                     End With
+
+                    RegisterForm.Close()
+
                     MessageBox.Show("You have successfully registered", "Register Success", MessageBoxButtons.OK, MessageBoxIcon.Information)
                 End If
             End If

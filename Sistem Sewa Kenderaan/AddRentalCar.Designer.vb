@@ -30,8 +30,6 @@ Partial Class AddRentalCar
         Me.TxtNamaKenderaan = New System.Windows.Forms.TextBox()
         Me.BtnAdd = New System.Windows.Forms.Button()
         Me.BtnFileUpload = New System.Windows.Forms.Button()
-        Me.TxtJenama = New System.Windows.Forms.TextBox()
-        Me.PanelTxt3 = New System.Windows.Forms.Panel()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.TxtTahun = New System.Windows.Forms.TextBox()
@@ -51,9 +49,9 @@ Partial Class AddRentalCar
         Me.LblHarga = New System.Windows.Forms.Label()
         Me.PanelTxt5 = New System.Windows.Forms.Panel()
         Me.TxtHarga = New System.Windows.Forms.MaskedTextBox()
+        Me.TxtJenama = New System.Windows.Forms.ComboBox()
         CType(Me.CarPictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.PanelTxt1.SuspendLayout()
-        Me.PanelTxt3.SuspendLayout()
         Me.PanelTxt4.SuspendLayout()
         Me.PanelTxt6.SuspendLayout()
         Me.PanelTxt2.SuspendLayout()
@@ -149,27 +147,6 @@ Partial Class AddRentalCar
         Me.BtnFileUpload.TabIndex = 16
         Me.BtnFileUpload.Text = "File Upload"
         Me.BtnFileUpload.UseVisualStyleBackColor = False
-        '
-        'TxtJenama
-        '
-        Me.TxtJenama.BackColor = System.Drawing.Color.FromArgb(CType(CType(44, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(80, Byte), Integer))
-        Me.TxtJenama.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TxtJenama.Font = New System.Drawing.Font("Microsoft YaHei UI", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtJenama.ForeColor = System.Drawing.SystemColors.Control
-        Me.TxtJenama.Location = New System.Drawing.Point(3, 10)
-        Me.TxtJenama.Name = "TxtJenama"
-        Me.TxtJenama.Size = New System.Drawing.Size(220, 30)
-        Me.TxtJenama.TabIndex = 0
-        Me.TxtJenama.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
-        'PanelTxt3
-        '
-        Me.PanelTxt3.BackColor = System.Drawing.Color.FromArgb(CType(CType(44, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(80, Byte), Integer))
-        Me.PanelTxt3.Controls.Add(Me.TxtJenama)
-        Me.PanelTxt3.Location = New System.Drawing.Point(794, 334)
-        Me.PanelTxt3.Name = "PanelTxt3"
-        Me.PanelTxt3.Size = New System.Drawing.Size(226, 49)
-        Me.PanelTxt3.TabIndex = 16
         '
         'Label1
         '
@@ -378,12 +355,25 @@ Partial Class AddRentalCar
         Me.TxtHarga.TabIndex = 0
         Me.TxtHarga.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
+        'TxtJenama
+        '
+        Me.TxtJenama.BackColor = System.Drawing.Color.FromArgb(CType(CType(44, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(80, Byte), Integer))
+        Me.TxtJenama.Font = New System.Drawing.Font("Microsoft YaHei UI", 13.8!)
+        Me.TxtJenama.ForeColor = System.Drawing.SystemColors.Control
+        Me.TxtJenama.FormattingEnabled = True
+        Me.TxtJenama.Items.AddRange(New Object() {"PROTON", "PERODUA", "HONDA", "MAZDA", "MERCEDES BENZ", "KIA", "VOLKSWAGEN", "BMW", "NISSAN", "TOYOTA"})
+        Me.TxtJenama.Location = New System.Drawing.Point(794, 334)
+        Me.TxtJenama.Name = "TxtJenama"
+        Me.TxtJenama.Size = New System.Drawing.Size(206, 38)
+        Me.TxtJenama.TabIndex = 1
+        '
         'AddRentalCar
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(230, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(34, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1318, 610)
+        Me.Controls.Add(Me.TxtJenama)
         Me.Controls.Add(Me.LblHarga)
         Me.Controls.Add(Me.LabelSeparator)
         Me.Controls.Add(Me.PanelTxt5)
@@ -396,7 +386,6 @@ Partial Class AddRentalCar
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.PanelTxt3)
         Me.Controls.Add(Me.PanelTxt4)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.BtnFileUpload)
@@ -413,8 +402,6 @@ Partial Class AddRentalCar
         CType(Me.CarPictureBox, System.ComponentModel.ISupportInitialize).EndInit()
         Me.PanelTxt1.ResumeLayout(False)
         Me.PanelTxt1.PerformLayout()
-        Me.PanelTxt3.ResumeLayout(False)
-        Me.PanelTxt3.PerformLayout()
         Me.PanelTxt4.ResumeLayout(False)
         Me.PanelTxt4.PerformLayout()
         Me.PanelTxt6.ResumeLayout(False)
@@ -436,8 +423,6 @@ Partial Class AddRentalCar
     Friend WithEvents BtnAdd As Button
     Friend WithEvents BtnFileUpload As Button
     Friend WithEvents TxtNamaKenderaan As TextBox
-    Friend WithEvents TxtJenama As TextBox
-    Friend WithEvents PanelTxt3 As Panel
     Friend WithEvents Label1 As Label
     Friend WithEvents Label4 As Label
     Friend WithEvents TxtTahun As TextBox
@@ -457,4 +442,5 @@ Partial Class AddRentalCar
     Friend WithEvents LblHarga As Label
     Friend WithEvents PanelTxt5 As Panel
     Friend WithEvents TxtHarga As MaskedTextBox
+    Friend WithEvents TxtJenama As ComboBox
 End Class

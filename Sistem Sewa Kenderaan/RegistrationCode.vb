@@ -33,7 +33,7 @@ Public Class RegistrationCode
                         If RegisterForm.RBtnStudent.Checked Then
                             cmd = New MySqlCommand("INSERT INTO pelajar_table(ic_number, kad_matrik, jurusan) VALUES(@ic_number, @kad_matrik, @jurusan)", conn)
                             cmd.Parameters.AddWithValue("@ic_number", RegisterForm.TxtICNumber.Text)
-                            cmd.Parameters.AddWithValue("@kad_matrik", RegisterForm.TxtKadMatrik.Text)
+                            cmd.Parameters.AddWithValue("@kad_matrik", RegisterForm.TxtICNumber.Text)
                             cmd.Parameters.AddWithValue("@jurusan", RegisterForm.TxtJurusan.Text)
                             cmd.ExecuteNonQuery()
                         End If
@@ -47,10 +47,12 @@ Public Class RegistrationCode
                         With LoginForm
                             .Show()
                             .Location = Me.Location
-                            RegisterForm.Close()
-                            RegisterConfirmationForm.Close()
                             Me.Close()
                         End With
+
+                        RegisterConfirmationForm.Close()
+                        RegisterForm.Close()
+
                         MessageBox.Show("You have successfully registered as Pemberi Sewa", "Register Success", MessageBoxButtons.OK, MessageBoxIcon.Information)
                     End If
                 Else

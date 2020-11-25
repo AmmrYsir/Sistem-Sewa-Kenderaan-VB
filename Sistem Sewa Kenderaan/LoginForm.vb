@@ -1,6 +1,8 @@
 ﻿Imports MySql.Data.MySqlClient
 
 Public Class LoginForm
+    Dim text As String
+
     Public IC As String
     Private rank As Integer
     Dim dr As MySqlDataReader
@@ -27,6 +29,8 @@ Public Class LoginForm
                         Me.Hide()
                     End With
             End Select
+            TxtICNumber.Text = String.Empty
+            TxtPassword.Text = String.Empty
         Else
             MessageBox.Show("Please enter a valid IC Number Or Password", "Login Error", MessageBoxButtons.OK, MessageBoxIcon.Warning)
         End If
@@ -57,6 +61,9 @@ Public Class LoginForm
             .Location = Me.Location
             Me.Hide()
         End With
+    End Sub
+
+    Private Sub LoginForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
     End Sub
 
 End Class

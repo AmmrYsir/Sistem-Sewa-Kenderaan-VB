@@ -149,6 +149,8 @@ Partial Class CarRentForm
         Me.DateTimePickerForSewaan.Format = System.Windows.Forms.DateTimePickerFormat.Time
         Me.DateTimePickerForSewaan.Location = New System.Drawing.Point(914, 299)
         Me.DateTimePickerForSewaan.Margin = New System.Windows.Forms.Padding(14)
+        Me.DateTimePickerForSewaan.MaxDate = New Date(2020, 12, 31, 0, 0, 0, 0)
+        Me.DateTimePickerForSewaan.MinDate = New Date(2020, 10, 12, 0, 0, 0, 0)
         Me.DateTimePickerForSewaan.Name = "DateTimePickerForSewaan"
         Me.DateTimePickerForSewaan.RightToLeft = System.Windows.Forms.RightToLeft.Yes
         Me.DateTimePickerForSewaan.RightToLeftLayout = True

@@ -16,9 +16,8 @@ Public Class PemberiSewaForm
 
     Private Sub CountNotification()
         Call Connect()
-        cmd = New MySqlCommand("SELECT COUNT(*) FROM rental_car WHERE user_id=@user_id AND car_status=@car_status", conn)
+        cmd = New MySqlCommand("SELECT COUNT(*) FROM booking_table INNER JOIN rental_car WHERE booking_table.car_id = rental_car.car_id AND rental_car.user_id=@user_id  ", conn)
         cmd.Parameters.AddWithValue("@user_id", SessionID)
-        cmd.Parameters.AddWithValue("@car_status", "Unavailable")
         NotificationCount = cmd.ExecuteScalar()
         conn.Close()
 
@@ -35,9 +34,8 @@ Public Class PemberiSewaForm
         FlowLayoutPanelHistory.Controls.Clear()
         Call Connect()
         Dim newComponent = New RentalCarComponentForPemberiSewa2()
-        cmd = New MySqlCommand("SELECT car_id, car_title, car_brand, car_year, car_transmission, car_image FROM rental_car WHERE user_id=@user_id AND car_status=@car_status", conn)
+        cmd = New MySqlCommand("SELECT * FROM booking_table INNER JOIN rental_car WHERE booking_table.car_id = rental_car.car_id AND rental_car.user_id=@user_id", conn)
         cmd.Parameters.AddWithValue("@user_id", SessionID)
-        cmd.Parameters.AddWithValue("@car_status", "Unavailable")
         Dim dt As New DataTable
         da = New MySqlDataAdapter(cmd)
         da.Fill(dt)
@@ -47,7 +45,10 @@ Public Class PemberiSewaForm
             Dim ms As New MemoryStream(Arr)
 
             newComponent = New RentalCarComponentForPemberiSewa2()
-            newComponent.Name = Rows("car_id")
+            newComponent.Name = Rows("booking_id")
+            newComponent.Label4.Text = Rows("rental_user_ic") & " has rent your rental car"
+            newComponent.Label5.Text = "Start: " & Rows("rental_time_start")
+            newComponent.Label6.Text = "End: " & Rows("rental_time_end")
             newComponent.BackColor = ColorTranslator.FromHtml("#ecf0f1")
             newComponent.LblNamaKenderaan.Text = Rows("car_title")
             newComponent.LblJenama.Text = Rows("car_brand")
@@ -70,9 +71,8 @@ Public Class PemberiSewaForm
 
         If DialogResult.Yes = MessageBox.Show("Are you sure you want to cancel this rental process?", "Rental Car Process", MessageBoxButtons.YesNo, MessageBoxIcon.Information) Then
             Call Connect()
-            cmd = New MySqlCommand("UPDATE rental_car SET car_status=@car_status, rental_time_start=@date, rental_time_end=@date WHERE car_id=@car_id", conn)
-            cmd.Parameters.AddWithValue("@car_id", ThisBtn.Parent.Name)
-            cmd.Parameters.AddWithValue("@date", DateNow)
+            cmd = New MySqlCommand("DELETE FROM booking_table WHERE booking_id=@booking_id", conn)
+            cmd.Parameters.AddWithValue("@booking_id", ThisBtn.Parent.Name)
             If cmd.ExecuteNonQuery() Then
                 LoadCarRentData()
                 CountNotification()
@@ -87,7 +87,14 @@ Public Class PemberiSewaForm
 
         If DialogResult.Yes = MessageBox.Show("Are you sure you want to this rental have been completed?", "Rental Car Process", MessageBoxButtons.YesNo, MessageBoxIcon.Information) Then
             Call Connect()
-            conn.Close()
+            cmd = New MySqlCommand("DELETE FROM booking_table WHERE booking_id=@booking_id", conn)
+            cmd.Parameters.AddWithValue("@booking_id", ThisBtn.Parent.Name)
+            If cmd.ExecuteNonQuery() Then
+                LoadCarRentData()
+                CountNotification()
+                LoadNotification()
+                conn.Close()
+            End If
         End If
     End Sub
 

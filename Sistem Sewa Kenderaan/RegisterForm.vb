@@ -50,7 +50,7 @@ Public Class RegisterForm
     Private Function isEmpty()
         If TxtICNumber.Text = "" Or TxtFullName.Text = "" Or TxtPassword.Text = "" Or TxtConfirmationPassword.Text = "" Or TxtNomborTelefon.Text = "" Or TxtUmur.Text = "" Or TxtAlamatPenuh.Text = "" Or TxtEmailAddress.Text = "" Then
             If RBtnStudent.Checked Then
-                If TxtKadMatrik.Text = "" Or TxtJurusan.Text = "" Then
+                If TxtICNumber.Text = "" Or TxtJurusan.Text = "" Then
                     Return True
                 Else
                     Return False
